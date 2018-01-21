@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>Micron.JS Playground</title>
+    <link href="dist/css/micron.min.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="dist/script/micron.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="interaction-wall">
+        <div class="interaction-brick">
+            <span class="interaction-box" data-micron="shake"></span>
+            <span class="code-block">"shake"</span>
+        </div>
+
+        <div class="interaction-brick">
+            <span class="interaction-box" data-micron="fade"></span>
+            <span class="code-block">"fade"</span>
+        </div>
+
+
+        <div class="interaction-brick">
+            <span class="interaction-box" data-micron="jelly"></span>
+            <span class="code-block">"jelly"</span>
+        </div>
+
+
+        <div class="interaction-brick">
+            <span class="interaction-box" data-micron="bounce"></span>
+            <span class="code-block">"bounce"</span>
+        </div>
+
+        <div class="interaction-brick">
+            <span class="interaction-box" data-micron="tada"></span>
+            <span class="code-block">"tada"</span>
+        </div>
+
+        <div class="interaction-brick">
+            <span class="interaction-box" data-micron="groove"></span>
+            <span class="code-block">"groove"</span>
+        </div>
+
+        <div class="interaction-brick">
+            <span class="interaction-box" data-micron="swing"></span>
+            <span class="code-block">"swing"</span>
+        </div>
+
+        <div class="interaction-brick">
+            <span class="interaction-box" data-micron="squeeze"></span>
+            <span class="code-block">"squeeze"</span>
+        </div>
+
+        <div class="interaction-brick">
+            <span class="interaction-box" data-micron="flicker"></span>
+            <span class="code-block">"flicker"</span>
+        </div>
+
+        <div class="interaction-brick">
+            <span class="interaction-box" data-micron="jerk"></span>
+            <span class="code-block">"jerk"</span>
+        </div>
+
+        <div class="interaction-brick">
+            <span class="interaction-box" data-micron="blink"></span>
+            <span class="code-block">"blink"</span>
+        </div>
+
+        <div class="interaction-brick">
+            <span class="interaction-box" data-micron="pop"></span>
+            <span class="code-block">"pop"</span>
+        </div>
+    </div>
+    <script>
+        micron.getEle(".triad").interaction("pop").duration(".45").timing("ease-out");
+    </script>
+</body>
+
+</html>

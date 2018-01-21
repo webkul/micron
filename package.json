@@ -1,0 +1,29 @@
+{
+  "name": "webkul-micron",
+  "version": "1.0.2",
+  "description": "a microInteraction library built with CSS Animations and driven by JavaScript Power",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webkul/micron.git"
+  },
+  "keywords": [
+    "micron",
+    "micronjs",
+    "micro interaction",
+    "microinteraction library",
+    "micro interaction css",
+    "micro interaction js",
+    "interaction js",
+    "ui interaction js"
+  ],
+  "author": "Nitish Kumar <support@webkul.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webkul/micron/issues"
+  },
+  "homepage": "https://webkul.github.io/micron/"
+}

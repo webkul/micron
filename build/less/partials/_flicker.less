@@ -1,0 +1,25 @@
+//Flicker
+.mjs-flicker {
+    animation-name: action-flicker;
+}
+
+@keyframes action-flicker {
+    0% {
+        transform: skewX(0deg);
+    }
+    20% {
+        transform: skewX(8deg);
+    }
+    40% {
+        transform: skewX(-8deg);
+    }
+    60% {
+        transform: skewX(4deg);
+    }
+    80% {
+        transform: skewX(-4deg);
+    }
+    100% {
+        transform: skewX(0deg);
+    }
+}
