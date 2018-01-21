@@ -1,77 +1,273 @@
 <html>
+
 <head>
-    <title>Micron.JS Playground</title>
+    <title>Micron.js - Webkul</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link rel="icon" type="image/x-icon" href="assets/res/micron-favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="assets/res/micron-favicon-57x57.png">
+    <link rel="canonical" href="https://webkul.github.io/micron/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Micron.JS - a [μ] microInteraction Library">
+    <meta name="twitter:description" content="a [μ] microInteraction library built with CSS Animations and controlled by JavaScript Power">
+    <meta name="twitter:image:src" content="https://webkul.com/blog/wp-content/uploads/2018/01/micron-card.png">
+    <meta name="twitter:creator" content="@webkul">
+    <meta name="twitter:url" content="https://webkul.github.io/micron/">
+    <meta property="og:title" content="Micron.JS - a [μ] microInteraction Library">
+    <meta property="og:description" content="a [μ] microInteraction library built with CSS Animations and controlled by JavaScript Power">
+    <meta property="og:url" content="https://webkul.github.io/micron/">
+    <meta property="og:image" content="https://webkul.com/blog/wp-content/uploads/2018/01/micron-card.png">
+    <meta name="keywords" content="micron, micronjs, micro interaction, microinteraction library, micro interaction css, micro interaction js, interaction js, ui interaction js">
+    <meta name="description" content="a [μ] microInteraction library built with CSS Animations and controlled by JavaScript Power">
+    <link href="assets/css/style.min.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/script.js" type="text/javaascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:700|Rubik:400,500" rel="stylesheet">
     <link href="dist/css/micron.min.css" rel="stylesheet" type="text/css" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="dist/script/micron.min.js" type="text/javascript"></script>
 </head>
+
 <body>
-    <div class="interaction-wall">
-        <div class="interaction-brick">
-            <span class="interaction-box" data-micron="shake"></span>
-            <span class="code-block">"shake"</span>
-        </div>
+    <!--Container-->
+    <div class="container">
+        <!--Header-->
+        <header>
+            <div class="hr-lt">
+                <ul>
+                    <li>
+                        <a href="docs.html#getting-started">Get Started</a>
+                    </li>
+                    <li>
+                        <a href="docs.html#usage">Usage</a>
+                    </li>
 
-        <div class="interaction-brick">
-            <span class="interaction-box" data-micron="fade"></span>
-            <span class="code-block">"fade"</span>
-        </div>
+                    <li>
+                        <a href="docs.html#expo">Expo</a>
+                    </li>
+                </ul>
+            </div>
 
+            <div class="hr-ct">
+                <div class="micron-logo">
+                    <img src="assets/res/micron-logo.svg" width="200px" height="50px" alt="Micron.js Logo" data-micron="squeeze">
+                </div>
+            </div>
 
-        <div class="interaction-brick">
-            <span class="interaction-box" data-micron="jelly"></span>
-            <span class="code-block">"jelly"</span>
-        </div>
-
-
-        <div class="interaction-brick">
-            <span class="interaction-box" data-micron="bounce"></span>
-            <span class="code-block">"bounce"</span>
-        </div>
-
-        <div class="interaction-brick">
-            <span class="interaction-box" data-micron="tada"></span>
-            <span class="code-block">"tada"</span>
-        </div>
-
-        <div class="interaction-brick">
-            <span class="interaction-box" data-micron="groove"></span>
-            <span class="code-block">"groove"</span>
-        </div>
-
-        <div class="interaction-brick">
-            <span class="interaction-box" data-micron="swing"></span>
-            <span class="code-block">"swing"</span>
-        </div>
-
-        <div class="interaction-brick">
-            <span class="interaction-box" data-micron="squeeze"></span>
-            <span class="code-block">"squeeze"</span>
-        </div>
-
-        <div class="interaction-brick">
-            <span class="interaction-box" data-micron="flicker"></span>
-            <span class="code-block">"flicker"</span>
-        </div>
-
-        <div class="interaction-brick">
-            <span class="interaction-box" data-micron="jerk"></span>
-            <span class="code-block">"jerk"</span>
-        </div>
-
-        <div class="interaction-brick">
-            <span class="interaction-box" data-micron="blink"></span>
-            <span class="code-block">"blink"</span>
-        </div>
-
-        <div class="interaction-brick">
-            <span class="interaction-box" data-micron="pop"></span>
-            <span class="code-block">"pop"</span>
+            <div class="hr-rt">
+                <div class="social-channel">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="micron.JS - a [μ] microInteraction library built with CSS Animations and controlled by JavaScript Power"
+                        data-via="webkul" data-hashtags="micronjs, microinteractions, css, opensource" data-related="webkul,nitishkmrk"
+                        data-lang="en" data-show-count="false">Tweet</a>
+                </div>
+                <div class="social-channel">
+                    <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwebkul.github.io%2Fmicron%2F&layout=button_count&size=large&mobile_iframe=true&width=84&height=28&appId"
+                        width="85" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                </div>
+                <div class="social-channel">
+                    <a class="github-button" href="https://github.com/webkul/micron" data-icon="octicon-star" data-size="large" data-show-count="true"
+                        aria-label="Star webkul/micron on GitHub">Star</a>
+                </div>
+            </div>
+        </header>
+        <!--Header-->
+        <div class="hero-text">
+            <h1>a
+                <span class="text-blue">[&mu;]</span> microInteraction library built with
+                <span class="text-blue">CSS</span> Animations and controlled by
+                <span class="text-yellow">JavaScript</span> Power</h1>
+            <a href="https://github.com/webkul/micron" class="button-cta" data-micron="bounce">View on GitHub</a>
         </div>
     </div>
-    <script>
-        micron.getEle(".triad").interaction("pop").duration(".45").timing("ease-out");
-    </script>
+    <!--//Container-->
+
+
+    <!--Fluid-->
+    <div class="fluid bg-blue text-center">
+        <div class="container">
+            <h2>Why [&mu;] micron?</h2>
+
+            <div class="fluid-wall">
+
+                <div class="fluid-brick">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+                        <path id="ringb" class="cls-interaction-1" d="M37.5,45A22.5,22.5,0,1,1,60,22.5,22.5,22.5,0,0,1,37.5,45Zm0-39A16.5,16.5,0,1,0,54,22.5,16.5,16.5,0,0,0,37.5,6Z"
+                        />
+                        <path id="ringa" class="cls-interaction-1" d="M22.5,60A22.5,22.5,0,1,1,45,37.5,22.5,22.5,0,0,1,22.5,60Zm0-39A16.5,16.5,0,1,0,39,37.5,16.5,16.5,0,0,0,22.5,21Z"
+                        />
+                    </svg>
+
+                    <h3>Add Interaction</h3>
+                    <p>Choose from ready to use [&mu;] interactions and add a &lsquo;click&rsquo; interaction just using
+                        <span class="code-block">data-micron</span>
+                    </p>
+                </div>
+
+                <div class="fluid-brick">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+                        <path class="cls-bind-1" d="M33.6,38.617l-3.738-4.476L26.4,37.979A14.9,14.9,0,0,1,14.1,45C6.313,45,0,38.284,0,30S6.313,15,14.1,15c4.951,0,9.784,2.277,12.3,6.383l3.738,4.476L33.6,22.021A14.9,14.9,0,0,1,45.9,15C53.687,15,60,21.716,60,30S53.687,45,45.9,45C40.95,45,36.116,42.723,33.6,38.617ZM22.029,24.683a8.657,8.657,0,0,0-7.468-3.938C9.833,20.745,6,24.888,6,30s3.833,9.255,8.561,9.255a9.021,9.021,0,0,0,7.468-4.332L26.4,30ZM54,30c0-5.112-3.833-9.255-8.561-9.255a9.021,9.021,0,0,0-7.468,4.332L33.6,30l4.37,5.317a8.657,8.657,0,0,0,7.468,3.938C50.167,39.255,54,35.112,54,30Z"
+                        />
+                        <circle id="ringc" class="cls-bind-2" cx="15" cy="30" r="4" />
+                    </svg>
+
+                    <h3>Bind Interaction</h3>
+                    <p>An element's interaction can easily bind with another element's &lsquo;click&rsquo; with
+                        <span class="code-block">data-micron-bind="true"</span>
+                    </p>
+                </div>
+
+                <div class="fluid-brick">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+                        <rect id="basec" class="cls-control-1" x="46" y="6" width="7" height="48" rx="3.5" ry="3.5" />
+                        <rect id="baseb" class="cls-control-1" x="27" y="6" width="7" height="48" rx="3.5" ry="3.5" />
+                        <rect id="basea" class="cls-control-1" x="7" y="6" width="7" height="48" rx="3.5" ry="3.5" />
+                        <circle id="overa" class="cls-control-2" cx="10" cy="25" r="10" />
+                        <circle id="overb" class="cls-control-2" cx="31" cy="35" r="10" />
+                        <circle id="overc" class="cls-control-2" cx="50" cy="22" r="10" />
+                    </svg>
+
+                    <h3>Control Interaction</h3>
+                    <p>Interaction behaviours like effect, speed and ease can be controlled using
+                        <span class="code-block">data-attributes</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--//Fluid-->
+
+    <div class="container text-center space-25">
+        <h2 id="interactions-preview">
+            <span class="text-blue">[&mu;]</span> Interactions</h2>
+        <div class="interaction-wall">
+            <div class="interaction-brick">
+                <span class="interaction-box" data-micron="shake"></span>
+                <span class="code-block">"shake"</span>
+            </div>
+
+            <div class="interaction-brick">
+                <span class="interaction-box" data-micron="fade"></span>
+                <span class="code-block">"fade"</span>
+            </div>
+
+
+            <div class="interaction-brick">
+                <span class="interaction-box" data-micron="jelly"></span>
+                <span class="code-block">"jelly"</span>
+            </div>
+
+
+            <div class="interaction-brick">
+                <span class="interaction-box" data-micron="bounce"></span>
+                <span class="code-block">"bounce"</span>
+            </div>
+
+            <div class="interaction-brick">
+                <span class="interaction-box" data-micron="tada"></span>
+                <span class="code-block">"tada"</span>
+            </div>
+
+            <div class="interaction-brick">
+                <span class="interaction-box" data-micron="groove"></span>
+                <span class="code-block">"groove"</span>
+            </div>
+
+            <div class="interaction-brick">
+                <span class="interaction-box" data-micron="swing"></span>
+                <span class="code-block">"swing"</span>
+            </div>
+
+            <div class="interaction-brick">
+                <span class="interaction-box" data-micron="squeeze"></span>
+                <span class="code-block">"squeeze"</span>
+            </div>
+
+            <div class="interaction-brick">
+                <span class="interaction-box" data-micron="flicker"></span>
+                <span class="code-block">"flicker"</span>
+            </div>
+
+            <div class="interaction-brick">
+                <span class="interaction-box" data-micron="jerk"></span>
+                <span class="code-block">"jerk"</span>
+            </div>
+
+            <div class="interaction-brick">
+                <span class="interaction-box" data-micron="blink"></span>
+                <span class="code-block">"blink"</span>
+            </div>
+
+            <div class="interaction-brick">
+                <span class="interaction-box" data-micron="pop"></span>
+                <span class="code-block">"pop"</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="fluid bg-gray perks">
+        <div class="container text-center color-href">
+
+            <div class="perk-brick">
+                <h4>Add Interaction</h4>
+                <p>Easily add an interaction to the DOM element with data attributes. You can add the click interaction to every
+                    element whether it's Button, SVG or a Paper.</p>
+                <p>Add Interaction to the element with
+                    <span class="code-block">data-micron="interaction"</span>
+                </p>
+                <p>Control Interaction's duration with
+                    <span class="code-block">data-micron-duration="number"</span>
+                </p>
+                <p>Control Interaction's timing-function with
+                    <span class="code-block">data-micron-timing="type"</span>
+                </p>
+                <p>
+                    <a href="docs.html#usage">Read Docs</a>
+                </p>
+            </div>
+
+            <div class="perk-brick">
+                <h4>Bind Interaction</h4>
+                <p>Easily bind an interaction defined on DOM element to a different DOM element with just two data attributes.</p>
+                <p>Add
+                    <span class="code-block">data-micron-bind="true"</span> &amp;
+                    <span class="code-block">data-micron-id="name"</span> to the triggering element, and interaction will
+                    be applied to the element which reference to the defined id attribute.</p>
+                <p>
+                    <a href="docs.html#bind-interaction">Read Docs</a>
+                </p>
+            </div>
+
+            <div class="perk-brick">
+                <h4>Access Anywhere</h4>
+                <p>Call micron chained methods to apply interactions to any DOM Element, right in your custom block of JavaScript
+                    Code.
+                </p>
+                <p>
+                    <span class="code-block">
+                        micron.getEle("").interaction("").duration("").timing("");
+                    </span>
+                </p>
+                <p>
+                    <a href="docs.html#access-inside-javascript">Read Docs</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center color-href">
+        <div class="credits">
+            <p>&copy; Copyright 2018
+                <a href="https://webkul.com" target="_blank">Webkul Software</a>. All rights reserved under MIT License.</p>
+        </div>
+    </div>
+
+    <!--Scripts-->
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <noscript>Micron is Javascript Library and it doesn't work unless browser supports JavaScript :(</noscript>
+    <!--//Scripts-->
 </body>
 
 </html>

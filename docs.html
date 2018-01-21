@@ -1,0 +1,227 @@
+<html>
+
+<head>
+    <title>Micron.js - Docs - Webkul</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link rel="icon" type="image/x-icon" href="assets/res/micron-favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="assets/res/micron-favicon-57x57.png">
+    <link rel="canonical" href="https://webkul.github.io/micron/docs.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Micron.JS - Docs">
+    <meta name="twitter:description" content="Everything you need to know about Micron.JS to Kickstart with Interactions">
+    <meta name="twitter:image:src" content="https://webkul.com/blog/wp-content/uploads/2018/01/micron-card.png">
+    <meta name="twitter:creator" content="@webkul">
+    <meta name="twitter:url" content="https://webkul.github.io/micron/docs.html">
+    <meta property="og:title" content="Micron.JS - Docs">
+    <meta property="og:description" content="Everything you need to know about Micron.JS to Kickstart with Interactions">
+    <meta property="og:url" content="https://webkul.github.io/micron/docs.html">
+    <meta property="og:image" content="https://webkul.com/blog/wp-content/uploads/2018/01/micron-card.png">
+    <meta name="keywords" content="micron, micronjs, micron doc, micron usage, micron getting started, micron installation">
+    <meta name="description" content="Everything you need to know about Micron.JS to Kickstart with Interactions">
+    <link href="assets/css/style.min.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/script.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:700|Rubik:400,500" rel="stylesheet">
+    <link href="dist/css/micron.min.css" rel="stylesheet" type="text/css" />
+    <script src="dist/script/micron.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="micron-logo">
+                <a href="https://webkul.github.io/micron"><img src="assets/res/micron-logo.svg" width="200px" height="50px" alt="Micron.js Logo"></a>
+            </div>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#getting-started">Getting Started</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#usage">Usage</a></li>
+                <li><a href="#interactions">Interactions</a></li>
+                <li><a href="#customization">Customization</a></li>
+                <li><a href="#expo">Expo</a></li>
+                <li><a href="#credits">Credits</a></li>
+            </ul>
+        </div>
+        <div class="paper">
+            <div class="editor">
+
+                <!--Block-->
+                <div class="block">
+                    <h1 id="introduction">Introduction</h1>
+                    <p>Micron.JS is a micro interaction library which can be used to add Interactions to different DOM Elements.
+                        Micron.JS animates an element using CSS power and the interactive behaviours are controlled by JavaScript.
+                    </p>
+                    <p>Micron.JS is easy to adapt and can bring interactions to life using html5 data attributes or a chain
+                        of JavaScript methods.
+                    </p>
+                </div>
+                <!--//Block-->
+
+                <!--Block-->
+                <div class="block">
+                    <h1 id="getting-started">Getting Started</h1>
+                    <p>To get started with Micron.JS, you need to include both <span class="code-block">micron.min.css</span>                        * (which have all ready to use interaction animations) and <span class="code-block">micron.min.js</span></p>
+                    <p>* If you don't need all the available interactions, you can simply include the respective <span class="code-block">*.min.css</span>                        file only.</p>
+                </div>
+                <!--//Block-->
+
+                <!--Block-->
+                <div class="block">
+                    <h1 id="installation">Installation</h1>
+                    <p>Compiled CSS and JavaScript minified files can be directly linked from <a href="https://unpkg.com/" target="_blank"
+                            rel="nofollow">unpkg.com </a> CDN or Micron.JS can be included within your workflow using your favorite
+                        package managers as well.</p>
+                    <h2>Link from UNPKG CDN</h2>
+                    <p>Include both the Micron CSS and JavaScript files in the header section of your document.</p>
+                    <div class="code-block">
+                        <div><span>&lt;link href=&quot;https://unpkg.com/webkul-micron@</span><span class="current-version">1.0.0</span><span>/dist/css/micron.min.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot;&gt;</span></div>
+                        <div><span>&lt;script src=&quot;https://unpkg.com/webkul-micron@</span><span class="current-version">1.0.0</span><span>/dist/script/micron.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</span></div>
+                    </div>
+
+                    <h2>Package Managers</h2>
+                    <p>You can use either npm or bower to get the Micron.JS package</p>
+                    <p>Copy and Paste the command below in your terminal to get package with npm -</p>
+                    <p><span class="code-block">npm install webkul-micron</span></p>
+                    <p>Copy and Paste the command below in your terminal to get package with bower -</p>
+                    <p><span class="code-block">bower install webkul-micron</span></p>
+                </div>
+                <!--//Block-->
+
+                <!--Block-->
+                <div class="block">
+                    <h1 id="usage">Usage</h1>
+                    <p>Micron JS is very easy and quick to use.</p>
+                    <h2>Adding an Interaction</h2>
+                    <p>Add the <span class="code-block">data-micron="<a href="#interactions">interaction</a>"</span> attribute
+                        to the respective element and Voila! you are already there.</p>
+                    <p class="example-code">Example Code</p>
+                    <div class="code-block code-space">&lt;a href=&quot;#&quot; class=&quot;button&quot; data-micron=&quot;bounce&quot;&gt;Label&lt;/a&gt;</div>
+                    <p class="example-code">Example Code Preview</p>
+                    <a href="#" class="button" data-micron="bounce">Label</a>
+
+                    <h2>Controlling Duration</h2>
+                    <p>Micron Interactions defaults to ".45" seconds. Add the <span class="code-block">data-micron-duration="number"</span>                        attribute to control the duration of the defined interaction.</p>
+                    <p class="example-code">Example Code</p>
+                    <div class="code-block code-space">&lt;a href=&quot;#&quot; class=&quot;button&quot; data-micron=&quot;bounce&quot; data-micron-duration=&quot;.95&quot;&gt;Label&lt;/a&gt;</div>
+                    <p class="example-code">Example Code Preview</p>
+                    <a href="#" class="button" data-micron="bounce" data-micron-duration=".95">Label</a>
+
+                    <h2 id="type-of-ease">Controlling Timing or Ease</h2>
+                    <p>Micron Interactions defaults to "ease-in-out". Add the <span class="code-block">data-micron-timing="@type"</span>                        attribute to control the easing of the defined interaction.</p>
+                    <p>For now, <span class="code-block">@type</span>only supports the easings mentioned below-<br>
+                        <span class="code-block">linear</span><br/>
+                        <span class="code-block">ease-in</span><br/>
+                        <span class="code-block">ease-out</span><br/>
+                        <span class="code-block">ease-in-out</span><br/>
+                    </p>
+
+                    <p class="example-code">Example Code</p>
+                    <div class="code-block code-space">&lt;a href=&quot;#&quot; class=&quot;button&quot; data-micron=&quot;bounce&quot; data-micron-timing=&quot;ease-in&quot;&gt;Label&lt;/a&gt;</div>
+                    <p class="example-code">Example Code Preview</p>
+                    <a href="#" class="button" data-micron="bounce" data-micron-timing="ease-out">Label</a>
+
+                    <h2 id="bind-interaction">Bind Interaction</h2>
+                    <p>Add
+                        <span class="code-block">data-micron-bind="true"</span> &amp;
+                        <span class="code-block">data-micron-id="name"</span> to the defined triggering element, and interaction
+                        will be applied to the element which reference to the defined id attribute.</p>
+                    <p class="example-code">Example Code</p>
+                    <div class="code-block code-space">&lt;a href=&quot;#&quot; class=&quot;button&quot; data-micron=&quot;bounce&quot; data-micron-bind=&quot;true&quot;
+                        data-micron-id=&quot;me&quot;&gt;Label&lt;/a&gt;
+                    </div>
+                    <div class="code-block code-space">&lt;a href=&quot;#&quot; class=&quot;button&quot; id=&quot;me&quot;&gt;Binded&lt;/a&gt;</div>
+                    <p class="example-code">Example Code Preview</p>
+                    <a href="#" class="button" data-micron="bounce" data-micron-bind="true" data-micron-id="me">Label</a>
+                    <a href="#" class="button" id="me">Binded</a>
+
+                    <h2 id="access-inside-javascript">Access inside JavaScript</h2>
+                    <p>Call micron chained methods to apply interactions to any DOM Element, right in your custom block of JavaScript
+                        Code.
+                    </p>
+                    <span class="code-block">
+                        micron.getEle("").interaction("").duration("").timing("");
+                    </span>
+
+                    <p>Pass an argument with <span class="code-block">selector name</span> which can either be <span class="code-block">id</span>                        or a <span class="code-block">class</span> to <span class="code-block">getEle()</span> method.</p>
+                    <p>Pass an argument with <span class="code-block"><a href="#interactions">interaction name</a></span> to
+                        <span class="code-block">interaction()</span> method.</p>
+                    <p>Pass an argument which is a <span class="code-block">number</span> to <span class="code-block">duration()</span>                        method.</p>
+                    <p>Pass an argument with <span class="code-block"><a href="#type-of-ease">type of ease</a></span> to
+                        <span
+                            class="code-block">timing()</span> method.</p>
+
+                    <p class="example-code">Example Code</p>
+                    <div class="code-block code-space">
+                        <span>&nbsp;function myFunc(){</span><br>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;micron.getEle("#me").interaction("bounce").duration(".45").timing("ease-out");</span><br>
+                        <span>&nbsp;}</span><br>
+                        <span>&nbsp;</span><br>
+                        <span class="code-fade">&nbsp;//Call Interaction</span><br>
+                        <span>&nbsp;myFunc()</span>
+                    </div>
+                    <br><br>
+                </div>
+                <!--//Block-->
+
+                <div class="block">
+                <h1 id="interactions">Interactions</h1>
+                <p>Currently, Micron.JS supports the interactions mentioned below, head back to the <a href="https://webkul.github.io/micron#interactions-preview">Homepage</a> to see all interactions in the real action.</p>
+                <p><span class="code-block">micron="shake"</span></p>
+                <p><span class="code-block">micron="fade"</span></p>
+                <p><span class="code-block">micron="jelly"</span></p>
+                <p><span class="code-block">micron="bounce"</span></p>
+                <p><span class="code-block">micron="tada"</span></p>
+                <p><span class="code-block">micron="groove"</span></p>
+                <p><span class="code-block">micron="swing"</span></p>
+                <p><span class="code-block">micron="squeeze"</span></p>
+                <p><span class="code-block">micron="flicker"</span></p>
+                <p><span class="code-block">micron="jerk"</span></p>
+                <p><span class="code-block">micron="blink"</span></p>
+                <p><span class="code-block">micron="pop"</span></p>
+                </div>
+
+                <div class="block">
+                <h1 id="customization">Customization</h1>
+                <p>You can even add your very own <span class="code-block">css</span> interaction to Micron.JS.</p>
+                <p>First include the code mentioned below in your css file.</p>
+                <div class="code-block">
+                    .mjs-linear{animation-timing-function:cubic-bezier(0,0,1,1)}.mjs-ease-in{animation-timing-function:cubic-bezier(.4,0,1,1)}.mjs-ease-out{animation-timing-function:cubic-bezier(0,0,.2,1)}.mjs-ease-in-out{animation-timing-function:cubic-bezier(.4,0,.2,1)}
+                </div>
+                <p>Create a class with <span class="code-block">.mjs-</span> prefix. Call the keyframe css animation inside it. Use the interaction with your <span class="code-block">class name</span> without <span class="code-block">.mjs-</span> prefix.</p>
+                <p class="example-code">Example Code</p>
+                    <div class="code-block code-space code-full">
+                        <span class="code-fade">&nbsp;//Define a Class</span><br>
+                        <span>&nbsp;.mjs-custom{</span><br>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;animation: custom-action;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+                        <span>&nbsp;}</span><br>
+                        <span>&nbsp;</span><br>
+                        <span>&nbsp;@keyframes custom-action{</span><br>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;from { . . . }&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;to { . . . }&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+                        <span>&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+                    </div>
+                    <p>Now use interaction with<span class="code-block">data-micron="custom"</span></p>
+                </div>
+
+                <div class="block">
+                    <h1 id="expo">Expo</h1>
+                    <p>Have you created a pen or a fiddle; or using Micron.JS in any of your live projects. It will be showcased right here in the front of entire the community.</p>
+                    <p><a href="https://goo.gl/forms/WLWszEQu3PHpjyfY2" target="_blank">Submit to Expo</a></p>
+                </div>
+
+                <div class="block">
+                    <h1 id="credits">Credits</h1>
+                    <p>&copy; Copyright 2018 <a href="https://webkul.com" target="_blank">Webkul Software</a>, All rights reserved.</p>
+                    <p>Kudos to <a href="https://twitter.com/vipinsahu" target="_blank">Vipin Sahu</a>, <a href="https://twitter.com/ratneshkumar" target="_blank">Ratnesh Kumar</a> and <a href="https://twitter.com/ysmnikhil" target="_blank">Nikhil Malik</a> from the <a href="https://twitter.com/nitishkmrk" target="_blank">Author.</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <noscript>Micron is Javascript Library and it doesn't work unless browser supports JavaScript :(</noscript>
+    <!--//Scripts-->
+</body>
+
+</html>

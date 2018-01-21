@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #010101;
+        stroke-width: 0;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="ringb" class="cls-1" d="M37.5,45A22.5,22.5,0,1,1,60,22.5,22.5,22.5,0,0,1,37.5,45Zm0-39A16.5,16.5,0,1,0,54,22.5,16.5,16.5,0,0,0,37.5,6Z"/>
+  <path id="ringa" class="cls-1" d="M22.5,60A22.5,22.5,0,1,1,45,37.5,22.5,22.5,0,0,1,22.5,60Zm0-39A16.5,16.5,0,1,0,39,37.5,16.5,16.5,0,0,0,22.5,21Z"/>
+</svg>

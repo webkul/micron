@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #202aff;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <rect id="basec" class="cls-1" x="46" y="6" width="7" height="48" rx="3.5" ry="3.5"/>
+  <rect id="baseb" class="cls-1" x="27" y="6" width="7" height="48" rx="3.5" ry="3.5"/>
+  <rect id="basea" class="cls-1" x="7" y="6" width="7" height="48" rx="3.5" ry="3.5"/>
+  <circle id="overa" class="cls-2" cx="10" cy="25" r="10"/>
+  <circle id="overb" class="cls-2" cx="31" cy="35" r="10"/>
+  <circle id="overc" class="cls-2" cx="50" cy="22" r="10"/>
+</svg>
