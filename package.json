@@ -1,6 +1,6 @@
 {
   "name": "webkul-micron",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "a microInteraction library built with CSS Animations and driven by JavaScript Power",
   "main": "gulpfile.js",
   "scripts": {
