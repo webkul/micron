@@ -1,15 +1,49 @@
 {
-  "name": "webkul-micron",
-  "version": "1.0.4",
+  "_from": "webkul-micron",
+  "_id": "webkul-micron@1.0.7",
+  "_inBundle": false,
+  "_integrity": "sha512-+9FJh4SMJeGsnY8xIK5IGfZ8jazbazC+Naf9o3OHGbeuEaPPq/Hhp46No4ceuhZIPsFT9PjLOgolAhKQATegXQ==",
+  "_location": "/webkul-micron",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "webkul-micron",
+    "name": "webkul-micron",
+    "escapedName": "webkul-micron",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/webkul-micron/-/webkul-micron-1.0.7.tgz",
+  "_shasum": "3457f5569b40f36bac5718dbe393ed578757886d",
+  "_spec": "webkul-micron",
+  "_where": "/Users/nitishkumar/node_modules",
+  "author": {
+    "name": "Nitish Kumar",
+    "email": "support@webkul.com"
+  },
+  "bugs": {
+    "url": "https://github.com/webkul/micron/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "gulp-less": "^3.3.2",
+    "gulp-rename": "^1.2.2"
+  },
+  "deprecated": false,
   "description": "a microInteraction library built with CSS Animations and driven by JavaScript Power",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "browser-sync": "^2.20.1",
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-uglify": "^3.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/webkul/micron.git"
-  },
+  "homepage": "https://webkul.github.io/micron/",
   "keywords": [
     "micron",
     "micronjs",
@@ -20,10 +54,15 @@
     "interaction js",
     "ui interaction js"
   ],
-  "author": "Nitish Kumar <support@webkul.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/webkul/micron/issues"
+  "main": "gulpfile.js",
+  "name": "webkul-micron",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webkul/micron.git"
   },
-  "homepage": "https://webkul.github.io/micron/"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.7"
 }
