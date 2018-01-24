@@ -15,12 +15,12 @@ If you don't need all the available interactions, you can simply include the res
 # Installation
 Compiled CSS and JavaScript minified files can be directly linked from [UNPKG](https://unpkg.com/#/) CDN or Micron.JS can be included within your workflow using your favorite package managers as well.
 
-## Link form UNPKG CDN
+## Link from UNPKG CDN
 Include both the Micron CSS and JavaScript files in the header section of your document.
 
 ```html
-<link href="https://unpkg.com/webkul-micron@1.0.4/dist/css/micron.min.css" type="text/css" rel="stylesheet">
-<script src="https://unpkg.com/webkul-micron@1.0.4/dist/script/micron.min.js" type="text/javascript"></script>
+<link href="https://unpkg.com/webkul-micron@1.1.0/dist/css/micron.min.css" type="text/css" rel="stylesheet">
+<script src="https://unpkg.com/webkul-micron@1.1.0/dist/script/micron.min.js" type="text/javascript"></script>
 ```
 
 ## Package Managers
@@ -45,7 +45,7 @@ Add the data-micron="interaction" attribute to the respective element and Voila!
 **Example Code**
 
 ```html
-<a href="#" class="button" data-micron="bounce">Label</a>
+<a href="#!" class="button" data-micron="bounce">Label</a>
 ```
 
 ## Controlling Duration
@@ -54,13 +54,13 @@ Micron Interactions defaults to ".45" seconds. Add the data-micron-duration="num
 **Example Code**
 
 ```html
-<a href="#" class="button" data-micron="bounce" data-micron-duration=".95">Label</a>
+<a href="#!" class="button" data-micron="bounce" data-micron-duration=".95">Label</a>
 ```
 
 ## Controlling Timing or Ease
 Micron Interactions defaults to "ease-in-out". Add the data-micron-timing="@type" attribute to control the easing of the defined interaction.
 
-For now, `@typeonly` supports the easings mentioned below-
+For now, `@type` only supports the easings mentioned below-
   
 `linear`
 
@@ -73,7 +73,7 @@ For now, `@typeonly` supports the easings mentioned below-
 **Example Code**  
 
 ```html
-<a href="#" class="button" data-micron="bounce" data-micron-timing="ease-in">Label</a>
+<a href="#!" class="button" data-micron="bounce" data-micron-timing="ease-in">Label</a>
 ```
 
 ## Bind Interaction
@@ -82,8 +82,8 @@ Add `data-micron-bind="true"` & `data-micron-id="name"` to the defined triggerin
 **Example Code**
 
 ```html
-<a href="#" class="button" data-micron="bounce" data-micron-bind="true" data-micron-id="me">Label</a> 
-<a href="#" class="button" id="me">Binded</a>
+<a href="#!" class="button" data-micron="bounce" data-micron-bind="true" data-micron-id="me">Label</a> 
+<a href="#!" class="button" id="me">Binded</a>
 ```
 
 # Access inside JavaScript
