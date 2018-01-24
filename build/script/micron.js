@@ -144,5 +144,7 @@ var Micron = function () {
 
 var micron = Micron();
 
+module.exports = micron;
+
 //Usage Sample
 //micron.getEle().interaction().duration().timing();

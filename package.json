@@ -56,14 +56,15 @@
     "ui interaction js"
   ],
   "license": "MIT",
-  "main": "gulpfile.js",
+  "main": "dist/scripts/micron.min.js",
   "name": "webkul-micron",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/webkul/micron.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "$(npm bin)/gulp"
   },
   "version": "1.1.1"
 }
