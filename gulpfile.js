@@ -3,7 +3,7 @@ var less = require('gulp-less');
 var cssmin = require('gulp-cssmin');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
-var remove_logging = require('gulp-remove-logging');
+var removeLogging = require('gulp-remove-logging');
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
 
@@ -39,7 +39,7 @@ gulp.task('watch-js', function () {
 gulp.task('minify-js', function () {
     return gulp.src('./build/script/*.js')
         .pipe(gulp.dest('./dist/script/'))
-        .pipe(remove_logging())
+        .pipe(removeLogging())
         .pipe(uglify())
         .pipe(rename({
             suffix: '.min'
