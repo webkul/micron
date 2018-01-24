@@ -41,7 +41,8 @@
     "browser-sync": "^2.20.1",
     "gulp": "^3.9.1",
     "gulp-cssmin": "^0.2.0",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "gulp-remove-logging": "^1.2.0"
   },
   "homepage": "https://webkul.github.io/micron/",
   "keywords": [
