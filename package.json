@@ -1,8 +1,8 @@
 {
   "_from": "webkul-micron",
-  "_id": "webkul-micron@1.0.7",
+  "_id": "webkul-micron@1.1.0",
   "_inBundle": false,
-  "_integrity": "sha512-+9FJh4SMJeGsnY8xIK5IGfZ8jazbazC+Naf9o3OHGbeuEaPPq/Hhp46No4ceuhZIPsFT9PjLOgolAhKQATegXQ==",
+  "_integrity": "sha512-wJsSXn1MqTLwOR7JivKtDriEXMBun44uAgPu2uKPjNy/SxuJKbpIv41FD7U5nEhxf32khoEVSU8dOxMaiLXJGw==",
   "_location": "/webkul-micron",
   "_phantomChildren": {},
   "_requested": {
@@ -16,13 +16,13 @@
     "fetchSpec": "latest"
   },
   "_requiredBy": [
-    "#USER",
-    "/"
+    "#DEV:/",
+    "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/webkul-micron/-/webkul-micron-1.0.7.tgz",
-  "_shasum": "3457f5569b40f36bac5718dbe393ed578757886d",
+  "_resolved": "https://registry.npmjs.org/webkul-micron/-/webkul-micron-1.1.0.tgz",
+  "_shasum": "03b568c8a546723a8b5ee4a637423e937ef81de3",
   "_spec": "webkul-micron",
-  "_where": "/Users/nitishkumar/node_modules",
+  "_where": "/Users/nitishkumar/Desktop/nom",
   "author": {
     "name": "Nitish Kumar",
     "email": "support@webkul.com"
@@ -41,8 +41,8 @@
     "browser-sync": "^2.20.1",
     "gulp": "^3.9.1",
     "gulp-cssmin": "^0.2.0",
-    "gulp-uglify": "^3.0.0",
-    "gulp-remove-logging": "^1.2.0"
+    "gulp-remove-logging": "^1.2.0",
+    "gulp-uglify": "^3.0.0"
   },
   "homepage": "https://webkul.github.io/micron/",
   "keywords": [
@@ -65,5 +65,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.1.0"
+  "version": "1.1.1"
 }
