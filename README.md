@@ -19,8 +19,8 @@ Compiled CSS and JavaScript minified files can be directly linked from [UNPKG](h
 Include both the Micron CSS and JavaScript files in the header section of your document.
 
 ```html
-<link href="https://unpkg.com/webkul-micron@1.1.0/dist/css/micron.min.css" type="text/css" rel="stylesheet">
-<script src="https://unpkg.com/webkul-micron@1.1.0/dist/script/micron.min.js" type="text/javascript"></script>
+<link href="https://unpkg.com/webkul-micron@1.1.1/dist/css/micron.min.css" type="text/css" rel="stylesheet">
+<script src="https://unpkg.com/webkul-micron@1.1.1/dist/script/micron.min.js" type="text/javascript"></script>
 ```
 
 ## Package Managers
