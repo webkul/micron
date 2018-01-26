@@ -1,67 +1,77 @@
-document.addEventListener("DOMContentLoaded", function () {
-    window.addEventListener("click", function (ev) {
-        var micronTrigger = ev.target;
-        var micronPrefix = "mjs-";
-        var micronData = micronTrigger.dataset.micron;
-        var micronDataDuration = micronTrigger.dataset.micronDuration;
-        var micronDataTiming = micronTrigger.dataset.micronTiming;
-        var micronBind = micronTrigger.dataset.micronBind;
-        var micronPuppet = micronTrigger.dataset.micronId;
-        //Global Trigger
-        if (micronData !== undefined) {
-            if (micronBind === "true") {
-                if (micronPuppet !== undefined) {
-                    var node = document.getElementById(micronPuppet);
-                    if (node !== undefined && node !== null) {
-                        var twinNode = node.cloneNode(true);
-                        node.parentNode.replaceChild(twinNode, node);
-                        twinNode.classList.add(micronPrefix + micronData);
-                    } else {
-                        console.log("%c Micron Error : None of the DOM element reference to the declared ID", "color:red");
-                        return false;
-                    }
-                } else {
-                    console.log("%c Micron Error : add data-micron-id to bind an interaction", "color:red");
-                    return false;
-                }
-            } else {
-                var node = micronTrigger;
-                var twinNode = node.cloneNode(true);
-                node.parentNode.replaceChild(twinNode, node);
-                twinNode.classList.add(micronPrefix + micronData);
-            }
-        } else {
+var watchEvents = function() {
+  window.addEventListener("click", function (ev) {
+    var micronTrigger = ev.target;
+    var micronPrefix = "mjs-";
+    var micronData = micronTrigger.dataset.micron;
+    var micronDataDuration = micronTrigger.dataset.micronDuration;
+    var micronDataTiming = micronTrigger.dataset.micronTiming;
+    var micronBind = micronTrigger.dataset.micronBind;
+    var micronPuppet = micronTrigger.dataset.micronId;
+    //Global Trigger
+    if (micronData !== undefined) {
+      if (micronBind === "true") {
+        if (micronPuppet !== undefined) {
+          var node = document.getElementById(micronPuppet);
+          if (node !== undefined && node !== null) {
+            var twinNode = node.cloneNode(true);
+            node.parentNode.replaceChild(twinNode, node);
+            twinNode.classList.add(micronPrefix + micronData);
+          } else {
+            console.log("%c Micron Error : None of the DOM element reference to the declared ID", "color:red");
             return false;
-        }
-
-        //Duration
-        if (micronDataDuration !== undefined) {
-            if (isNaN(micronDataDuration)) {
-                console.log("%c Micron Error : data-micron-duration can only be number or decimal", "color:red");
-                console.log("%c Micron Fallback : data-micron-duration set to default", "color:orange");
-                twinNode.style.animationDuration = ".30s";
-            } else {
-                twinNode.style.animationDuration = micronDataDuration + "s";
-            }
+          }
         } else {
-            twinNode.style.animationDuration = ".45s";
+          console.log("%c Micron Error : add data-micron-id to bind an interaction", "color:red");
+          return false;
         }
+      } else {
+        var node = micronTrigger;
+        var twinNode = node.cloneNode(true);
+        node.parentNode.replaceChild(twinNode, node);
+        twinNode.classList.add(micronPrefix + micronData);
+      }
+    } else {
+      return false;
+    }
 
-        //Easing Timing Function
-        if (micronDataTiming !== undefined) {
-            if (micronDataTiming === "linear" || micronDataTiming === "ease-in" || micronDataTiming === "ease-out" || micronDataTiming === "ease-in-out") {
-                twinNode.classList.add(micronPrefix + micronDataTiming);
-            } else {
-                console.log("%c Micron Error : data-micron-timing currently supports linear, ease-in, ease-out and ease-in-out only", "color:red");
-                console.log("%c Micron Fallback : data-micron-timing set to default", "color:orange");
-                twinNode.classList.add(micronPrefix + "ease-in-out");
-            }
-        } else {
-            twinNode.classList.add(micronPrefix + "ease-in-out");
-        }
+    //Duration
+    if (micronDataDuration !== undefined) {
+      if (isNaN(micronDataDuration)) {
+        console.log("%c Micron Error : data-micron-duration can only be number or decimal", "color:red");
+        console.log("%c Micron Fallback : data-micron-duration set to default", "color:orange");
+        twinNode.style.animationDuration = ".30s";
+      } else {
+        twinNode.style.animationDuration = micronDataDuration + "s";
+      }
+    } else {
+      twinNode.style.animationDuration = ".45s";
+    }
 
-    });
-});
+    //Easing Timing Function
+    if (micronDataTiming !== undefined) {
+      if (micronDataTiming === "linear" || micronDataTiming === "ease-in" || micronDataTiming === "ease-out" || micronDataTiming === "ease-in-out") {
+        twinNode.classList.add(micronPrefix + micronDataTiming);
+      } else {
+        console.log("%c Micron Error : data-micron-timing currently supports linear, ease-in, ease-out and ease-in-out only", "color:red");
+        console.log("%c Micron Fallback : data-micron-timing set to default", "color:orange");
+        twinNode.classList.add(micronPrefix + "ease-in-out");
+      }
+    } else {
+      twinNode.classList.add(micronPrefix + "ease-in-out");
+    }
+
+  });
+}
+
+// If micron.js gets fetched asynchronously
+// We may or may not catch the DOMContentLoaded event
+if (document.readyState != "loading") {
+  watchEvents();
+} else {
+  document.addEventListener("DOMContentLoaded", function () {
+    watchEvents();
+  });
+}
 
 //Micron Prototype
 var Micron = function () {
