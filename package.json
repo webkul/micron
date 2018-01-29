@@ -56,7 +56,10 @@
     "ui interaction js"
   ],
   "license": "MIT",
-  "main": "dist/scripts/micron.min.js",
+  "main": "dist/lib",
+  "directories": {
+    "lib": "dist/lib"
+  },
   "name": "webkul-micron",
   "repository": {
     "type": "git",

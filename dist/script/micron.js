@@ -154,7 +154,10 @@ var Micron = function () {
 
 var micron = Micron();
 
-module.exports = micron;
+// Only export the CommonJS module if available
+if(typeof module === "object" && module.exports) {
+  module.exports = micron;
+}
 
 //Usage Sample
 //micron.getEle().interaction().duration().timing();
