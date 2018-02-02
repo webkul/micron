@@ -23,12 +23,23 @@ Include both the Micron CSS and JavaScript files in the header section of your d
 <script src="https://unpkg.com/webkul-micron@1.1.1/dist/script/micron.min.js" type="text/javascript"></script>
 ```
 
+Note: the script bundle now supports asynchronous loading:
+*@TODO before publishing: change version number from 1.1.1 to the new one.*
+```html
+<script src="https://unpkg.com/webkul-micron@1.1.1/dist/script/micron.min.js" type="text/javascript" async></script>
+```
+
 ## Package Managers
 You can use either npm or bower to get the Micron.JS package.
 
 Copy and Paste the command below in your terminal to get package with npm -
 ```cli
 npm install webkul-micron
+```
+
+Then at the top of your javascript code load the package:
+```javascript
+const micron = require('webkul-micron');
 ```
 
 Copy and Paste the command below in your terminal to get package with bower -
@@ -61,7 +72,7 @@ Micron Interactions defaults to ".45" seconds. Add the data-micron-duration="num
 Micron Interactions defaults to "ease-in-out". Add the data-micron-timing="@type" attribute to control the easing of the defined interaction.
 
 For now, `@type` only supports the easings mentioned below-
-  
+
 `linear`
 
 `ease-in`
@@ -70,7 +81,7 @@ For now, `@type` only supports the easings mentioned below-
 
 `ease-in-out`
 
-**Example Code**  
+**Example Code**
 
 ```html
 <a href="#!" class="button" data-micron="bounce" data-micron-timing="ease-in">Label</a>
@@ -82,7 +93,7 @@ Add `data-micron-bind="true"` & `data-micron-id="name"` to the defined triggerin
 **Example Code**
 
 ```html
-<a href="#!" class="button" data-micron="bounce" data-micron-bind="true" data-micron-id="me">Label</a> 
+<a href="#!" class="button" data-micron="bounce" data-micron-bind="true" data-micron-id="me">Label</a>
 <a href="#!" class="button" id="me">Binded</a>
 ```
 
@@ -106,7 +117,7 @@ Pass an argument with `type of ease` to `timing()` method.
 function myFunc(){
     micron.getEle("#me").interaction("bounce").duration(".45").timing("ease-out");
  }
- 
+
 //Call Interaction
 myFunc();
 ```
@@ -155,13 +166,13 @@ Create a class with `.mjs-` prefix. Call the keyframe css animation inside it. U
 ```css
  //Define a Class
  .mjs-custom{
-    animation: custom-action;    
+    animation: custom-action;
  }
- 
+
  @keyframes custom-action{
-    from { . . . }    
-    to { . . . }    
- }    
+    from { . . . }
+    to { . . . }
+ }
 ```
 
 Now use interaction with `data-micron="custom"`

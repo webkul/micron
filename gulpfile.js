@@ -44,7 +44,13 @@ gulp.task('minify-js', function () {
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest('./dist/script/'));
+        .pipe(gulp.dest('./dist/script/'))
+
+        // Copy files in the /dist/lib folder to make CommonJS imports work
+        .pipe(rename({
+            basename: 'index'
+        }))
+        .pipe(gulp.dest('./dist/lib/'));
 });
 
 /*Sync with Browser*/
