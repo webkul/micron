@@ -40,8 +40,8 @@
     <link href="assets/css/style.min.css" rel="stylesheet" type="text/css">
     <script src="assets/js/script.js" type="text/javaascript"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:700|Rubik:400,500" rel="stylesheet">
-    <link href="dist/css/micron.min.css" rel="stylesheet" type="text/css" />
-    <script src="dist/script/micron.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/webkul-micron@1.1.1/dist/css/micron.min.css" type="text/css" rel="stylesheet">
+    <script src="https://unpkg.com/webkul-micron@1.1.1/dist/script/micron.min.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -77,12 +77,11 @@
                         data-lang="en" data-show-count="false">Tweet</a>
                 </div>
                 <div class="social-channel">
-                    <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwebkul.github.io%2Fmicron%2F&layout=button_count&size=large&mobile_iframe=true&width=84&height=28&appId"
-                        width="105" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwebkul.github.io%2Fmicron%2F&layout=button&size=large&mobile_iframe=true&width=84&height=28&appId"
+                        width="75" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
                 </div>
                 <div class="social-channel">
-                    <a class="github-button" href="https://github.com/webkul/micron" data-icon="octicon-star" data-size="large" data-show-count="true"
-                        aria-label="Star webkul/micron on GitHub">Star</a>
+                    <a class="github-button" href="https://github.com/webkul/micron" data-size="large" data-show-count="true" aria-label="Star webkul/micron on GitHub">Star</a>
                 </div>
             </div>
         </header>
@@ -250,8 +249,8 @@
                 <p>Easily bind an interaction defined on DOM element to a different DOM element with just two data attributes.</p>
                 <p>Add
                     <span class="code-block">data-micron-bind="true"</span> &amp;
-                    <span class="code-block">data-micron-id="name"</span> to the triggering element, and interaction will
-                    be applied to the element which reference to the defined id attribute.</p>
+                    <span class="code-block">data-micron-id="name"</span> to the triggering element, and interaction will be applied to the element
+                    which reference to the defined id attribute.</p>
                 <p>
                     <a href="docs.html#bind-interaction">Read Docs</a>
                 </p>
