@@ -19,14 +19,8 @@ Compiled CSS and JavaScript minified files can be directly linked from [UNPKG](h
 Include both the Micron CSS and JavaScript files in the header section of your document.
 
 ```html
-<link href="https://unpkg.com/webkul-micron@1.1.1/dist/css/micron.min.css" type="text/css" rel="stylesheet">
-<script src="https://unpkg.com/webkul-micron@1.1.1/dist/script/micron.min.js" type="text/javascript"></script>
-```
-
-Note: the script bundle now supports asynchronous loading:
-*@TODO before publishing: change version number from 1.1.1 to the new one.*
-```html
-<script src="https://unpkg.com/webkul-micron@1.1.1/dist/script/micron.min.js" type="text/javascript" async></script>
+<link href="https://unpkg.com/webkul-micron@1.1.2/dist/css/micron.min.css" type="text/css" rel="stylesheet">
+<script src="https://unpkg.com/webkul-micron@1.1.2/dist/script/micron.min.js" type="text/javascript" async></script>
 ```
 
 ## Package Managers
@@ -37,7 +31,7 @@ Copy and Paste the command below in your terminal to get package with npm -
 npm install webkul-micron
 ```
 
-Then at the top of your javascript code load the package:
+Load the package with the code below:
 ```javascript
 const micron = require('webkul-micron');
 ```
@@ -51,7 +45,7 @@ bower install webkul-micron
 Micron JS is very easy and quick to use.
 
 ## Adding an Interaction
-Add the data-micron="interaction" attribute to the respective element and Voila! you are already there.
+Add the `data-micron="interaction"` attribute to the respective element and Voila! you are already there.
 
 **Example Code**
 

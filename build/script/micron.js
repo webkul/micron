@@ -39,7 +39,7 @@ var watchEvents = function() {
       if (isNaN(micronDataDuration)) {
         console.log("%c Micron Error : data-micron-duration can only be number or decimal", "color:red");
         console.log("%c Micron Fallback : data-micron-duration set to default", "color:orange");
-        twinNode.style.animationDuration = ".30s";
+        twinNode.style.animationDuration = ".45s";
       } else {
         twinNode.style.animationDuration = micronDataDuration + "s";
       }
@@ -82,7 +82,7 @@ var Micron = function () {
     var getEle = function (paramEle) {
         ele = document.querySelector(paramEle);
         if (ele != undefined && ele != null) {
-            node = ele.cloneNode("true");
+            node = ele.cloneNode(true);
             ele.parentNode.replaceChild(node, ele);
             return this;
         } else {
@@ -94,16 +94,16 @@ var Micron = function () {
     }
 
     //Animation
-    var interaction = function (paramAnimation) {
+    var interaction = function (paramInteraction) {
         if (node !== undefined && node !== null) {
-            if (paramAnimation != undefined && paramAnimation != null && paramAnimation.indexOf(" ") ==
+            if (paramInteraction != undefined && paramInteraction != null && paramInteraction.indexOf(" ") ==
                 -1) {
-                var prefixAnimation = "mjs-" + paramAnimation;
+                var prefixAnimation = "mjs-" + paramInteraction;
                 node.classList.add(prefixAnimation);
                 return this;
             } else {
                 console.log(
-                    "%c Micron Error : either you are missing an argument or trying to pass an argument with spaces to animation() method",
+                    "%c Micron Error : either you are missing an argument or trying to pass an argument with spaces to interaction() method",
                     "color:red");
                 return this;
             }
