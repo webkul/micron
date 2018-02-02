@@ -158,7 +158,7 @@ Create a class with `.mjs-` prefix. Call the keyframe css animation inside it. U
 **Example Code**
 
 ```css
- //Define a Class
+ /*Define a Class*/
  .mjs-custom{
     animation: custom-action;
  }
