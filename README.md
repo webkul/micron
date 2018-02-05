@@ -19,8 +19,8 @@ Compiled CSS and JavaScript minified files can be directly linked from [UNPKG](h
 Include both the Micron CSS and JavaScript files in the header section of your document.
 
 ```html
-<link href="https://unpkg.com/webkul-micron@1.1.2/dist/css/micron.min.css" type="text/css" rel="stylesheet">
-<script src="https://unpkg.com/webkul-micron@1.1.2/dist/script/micron.min.js" type="text/javascript" async></script>
+<link href="https://unpkg.com/webkul-micron@1.1.3/dist/css/micron.min.css" type="text/css" rel="stylesheet">
+<script src="https://unpkg.com/webkul-micron@1.1.3/dist/script/micron.min.js" type="text/javascript" async></script>
 ```
 
 ## Package Managers
@@ -119,30 +119,29 @@ myFunc();
 # Interactions
 Currently, Micron.JS supports the interactions mentioned below, head back to the [homepage](https://webkul.github.io/micron) to see all interactions in the real action.
 
-`micron="shake"`
+`data-micron="shake"`
 
-`micron="fade"`
+`data-micron="fade"`
 
-`micron="jelly"`
+`data-micron="jelly"`
 
-`micron="bounce"`
+`data-micron="bounce"`
 
-`micron="tada"`
+`data-micron="tada"`
 
-`micron="groove"`
+`data-micron="groove"`
 
-`micron="swing"`
+`data-micron="swing"`
 
-`micron="squeeze"`
+`data-micron="squeeze"`
 
-`micron="flicker"`
+`data-micron="flicker"`
 
-`micron="jerk"`
+`data-micron="jerk"`
 
+`data-micron="blink"`
 
-`micron="blink"`
-
-`micron="pop"`
+`data-micron="pop"`
 
 # Customization
 You can even add your very own css interaction to Micron.JS.
