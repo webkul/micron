@@ -13,7 +13,7 @@ var watchEvents = function() {
         if (micronPuppet !== undefined) {
           var node = document.getElementById(micronPuppet);
           if (node !== undefined && node !== null) {
-            var twinNode = node.cloneNode(true);
+            var twinNode = node;
             node.parentNode.replaceChild(twinNode, node);
             twinNode.classList.add(micronPrefix + micronData);
           } else {
@@ -26,7 +26,7 @@ var watchEvents = function() {
         }
       } else {
         var node = micronTrigger;
-        var twinNode = node.cloneNode(true);
+        var twinNode = node;
         node.parentNode.replaceChild(twinNode, node);
         twinNode.classList.add(micronPrefix + micronData);
       }
@@ -82,7 +82,7 @@ var Micron = function () {
     var getEle = function (paramEle) {
         ele = document.querySelector(paramEle);
         if (ele != undefined && ele != null) {
-            node = ele.cloneNode(true);
+            node = ele;
             ele.parentNode.replaceChild(node, ele);
             return this;
         } else {
