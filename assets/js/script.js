@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var currentVersion = "1.1.5";
+    var currentVersion = "1.1.6";
     var getVersion = document.querySelectorAll(".current-version");
     if (getVersion != undefined && getVersion != null) {
         for (var i = 0; i < getVersion.length; i++) {
